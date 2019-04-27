@@ -5,10 +5,10 @@ This is a list of ideas for Haskell open-source projects. Most of these ideas ar
 This list is in the public domain; you may implement any of these projects, and you do not have to give me credit. If you, the reader, have project ideas, open a PR and I'll add them.
 
 # Effect implementations
+* RWSC carrier interpreting (Reader r :+: Writer w :+: State s) (★)
 * Structured logging with [katip](http://hackage.haskell.org/package/katip). (★★)
 * `Memo`, a là `Control.Monad.Memo`. (★★★)
 * Region-based resource management as [described by Oleg](http://okmij.org/ftp/Haskell/regions.html). (★★★★★)
-* RWSC carrier interpreting (Reader r :+: Writer w :+: State s) (★)
 * Delimited continuations (this may or may not be possible) (💀)
 
 # Algorithms
@@ -18,10 +18,10 @@ This list is in the public domain; you may implement any of these projects, and 
 * Time-based UUID library. Cassandra and many other networked servers provide a `uuidtime` data type, which stores a UUID that has its date encoded in its first few bytes, such that the output of successive generated `uuidtime` is roughly in sorted order, and that there exists a function to reconstruct at least the day part of the `uuidtime`. (★★)
 * Validation library for JSON structures. The `aeson` package is great and performant but complects validation and decoding of JSON data. Build a library that uses recursion schemes to check validity of a JSON `Value` and reports all possible errors at once, a la the `Validation` monad. (★★)
 * Natural-language date/time parser. You could fork [duckling](https://duckling.wit.ai). (★★★★)
-* While you're at it, you could create a new date/time library, which would be most welcome for those of us who have suffered the differences between `Day`, `Date`, `LocalTime` and `UTCTime`. The difficulty here is in ensuring compatibility with the whole ecosystem of libraries that use `UTCTime`.
+* While you're at it, you could create a new date/time library, which would be most welcome for those of us who have suffered the differences between `Day`, `Date`, `LocalTime` and `UTCTime`. The difficulty here is in ensuring compatibility with the whole ecosystem of libraries that use `UTCTime`. (★★★★)
 
 # Web programming
-* Declarative interface to [airship](http://hackage.haskell.org/package/airship) using some sort of deep embedding. (★)
+* Declarative interface to [airship](http://hackage.haskell.org/package/airship) using some sort of deep embedding. (★★)
 * Library for HTTP tracing with [lightstep](https://lightstep.com). [`haskell-opentracing`](https://github.com/ocharles/haskell-opentracing) might be somewhere to start. (★★★)
 * Bridge between `network` and `System.Event`, a la Netty. (★★★★)
 
