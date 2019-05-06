@@ -2,7 +2,7 @@
 
 This is a list of ideas for Haskell open-source projects. Most of these ideas are centered around problems that I've run into in the real world.
 
-This list is in the public domain; you may implement any of these projects, and you do not have to give me credit. If you, the reader, have project ideas, open a PR and I'll add them.
+This list is in the public domain; you may implement any of these projects, and you do not have to give me credit. If you, the reader, have project ideas, open a PR and I'll add them. These ideas are suffixed with a number of stars corresponding to my rough estimate of the time and effort involved therein.
 
 # Effect implementations
 * RWSC carrier interpreting (Reader r :+: Writer w :+: State s) (★)
@@ -20,10 +20,13 @@ This list is in the public domain; you may implement any of these projects, and 
 * Natural-language date/time parser. You could fork [duckling](https://duckling.wit.ai). (★★★★)
 * While you're at it, you could create a new date/time library, which would be most welcome for those of us who have suffered the differences between `Day`, `Date`, `LocalTime` and `UTCTime`. The difficulty here is in ensuring compatibility with the whole ecosystem of libraries that use `UTCTime`. (★★★★)
 
+# Pretty-printing
+* A library providing a useful API to build precedence-sensitive pretty printers atop `prettyprinter`.
+
 # Web programming
 * Declarative interface to [airship](http://hackage.haskell.org/package/airship) using some sort of deep embedding. (★★)
 * Library for HTTP tracing with [lightstep](https://lightstep.com). [`haskell-opentracing`](https://github.com/ocharles/haskell-opentracing) might be somewhere to start. (★★★)
-* Bridge between `network` and `System.Event`, a la Netty. (★★★★)
+* HTTP library like [`http4s`](https://http4s.org/) atop either [`streamly`](https://hackage.haskell.org/package/streamly-0.6.0/) or streaming.
 
 # macOS
 * Bridge to [`NSLinguisticTagger`](https://developer.apple.com/documentation/foundation/nslinguistictagger) and [`NSOrthography`](https://developer.apple.com/documentation/foundation/nsorthography) for natural language processing. (★)
