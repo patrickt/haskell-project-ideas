@@ -5,7 +5,7 @@ This is a list of ideas for Haskell open-source projects. Most of these ideas ar
 This list is in the public domain; you may implement any of these projects, and you do not have to give me credit. If you, the reader, have project ideas, open a PR and I'll add them. These ideas are suffixed with a number of stars corresponding to my rough estimate of the time and effort involved therein.
 
 # Effect implementations
-* RWSC carrier interpreting (Reader r :+: Writer w :+: State s) (★)
+* ~RWSC carrier interpreting (Reader r :+: Writer w :+: State s) (★)~
 * Structured logging with [katip](http://hackage.haskell.org/package/katip). (★★)
 * `Memo`, a là `Control.Monad.Memo`. (★★★)
 * Region-based resource management as [described by Oleg](http://okmij.org/ftp/Haskell/regions.html). (★★★★★)
